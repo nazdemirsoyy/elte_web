@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="CSS/normal.css" />
+    <title>Republic of Turkey</title>
+  </head>
+  <body>
+    <div class="containerMain">
+      <h6 hidden>Date and Time:</h6>
+      <h6 id="displayDateTime"></h6>
+      <!--high-contrast-->
+      <button id="activate-high-contrast">High Contrast Mode</button>
+      <button id="activate-normal">Normal Mode</button>
+      <!--high-contrast-->
+      <div>
+        <h1 class="p-3 mb-2 .bg-light text-center">Republic of Turkey</h1>
+      </div>
+      <!--Header_image-->
+      <div class="text-center">
+        <img
+          src="img/turkey_header.jpg"
+          alt="header_image"
+          class="center img-fluid borderImg"
+        />
+      </div>
+
+      <!--Nav-->
+      <nav class="navbar navbar-expand-lg navbar-light color navSolid">
+        <a class="navbar-brand marginL" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >History<span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historicalPlaces.html"
+                >Historical Places</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="culture.html">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Nav-->
+
+      <!--Form-->
+      <section class="row d-flex justify-content-center mt-4 mb-4">
+        <div class="form col-8 mt-4">
+          <form
+            action="mailto:nazdemirsoyy@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <fieldset>
+              <legend class="row d-flex justify-content-center">
+                Reach us
+              </legend>
+
+              <fieldset>
+                <label for="name"><strong>Name</strong></label
+                ><br />
+                <input type="text" name="name" id="name" size="40" /><br />
+                <label for="subject"><strong>Subject</strong></label
+                ><br />
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  size="40"
+                /><br />
+                <label for="email"><strong>E-mail address</strong></label
+                ><br />
+                <input type="email" name="email" id="email" size="40" /><br />
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="newsletter"
+                  value="yes"
+                />
+                <label for="newsletter"
+                  >I'd like to get updates about the website!</label
+                >
+              </fieldset>
+
+              <textarea
+                cols="40"
+                rows="8"
+                name="comment"
+                id="comment"
+                placeholder="Write here!"
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <p>
+                Rate our website<br />
+                <input type="radio" name="rating" id="v1" value="1" />
+                <label for="v1">1</label>
+                <input type="radio" name="rating" id="v2" value="2" />
+                <label for="v2">2</label>
+                <input type="radio" name="rating" id="v3" value="3" />
+                <label for="v3">3</label>
+                <input type="radio" name="rating" id="v4" value="4" />
+                <label for="v4">4</label>
+                <input type="radio" name="rating" id="v5" value="5" />
+                <label for="v5">5</label>
+              </p>
+            </fieldset>
+
+            <button class="btn btn-primary" id="btn">Send</button>
+            <input
+              class="btn btn-primary"
+              id="btnS"
+              type="reset"
+              value="Reset"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer page-footer font-small teal pt-12 white">
+      <!-- Footer Text -->
+      <div class="container-fluid text-center text-md-left color">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">Contact:</h5>
+            <p>E-mail: nazdemirsoyy@gmail.com</p>
+            <p>Neptun Code: BLD0YM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 color">
+        © 2022 Copyright:
+        <a>Naz Demirsoy</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--form-->
+    <script src="CSS/script.js"></script>
+
+    <script src="CSS/switch.js"></script>
+  </body>
+</html>
